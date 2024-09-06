@@ -1,0 +1,10 @@
+[Nemo Action]
+
+Name=Find source .deb package
+Comment=Lookup what system package a file belongs to
+Exec=sh -c 'dpkg -S %F | zenity --text-info --width=500 --height=300'
+Selection=notnone
+Extensions=any;
+#Terminal=true
+Icon-Name=face-smile
+
